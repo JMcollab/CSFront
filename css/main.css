@@ -1,10 +1,10 @@
-body {
+/*body {
   background: #ffffff;
 }
 
-/*****************************************
-NAV
-*****************************************/
+
+
+
 .navbar, .navbar-default {
   font-family: 'Hind', sans-serif;
   margin-bottom:0;
@@ -46,9 +46,17 @@ NAV
   }
 }
 
-/*******************************************
-BODY
-*******************************************/
+
+
+
+
+
+
 canvas {
   margin-top:100px;
+}*/
+
+
+.navbar-default .navbar-nav>li>a:hover {
+  color:#39d1b4;
 }

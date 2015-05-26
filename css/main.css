@@ -77,12 +77,19 @@ canvas {
 
 @media (min-width: 768px) {
 #steam {
-  background:#39d1b4;
+  background:#ffffff;
+  border:2px solid #39d1b4;
+  border-radius:5px;
+  -webkit-transition: background 200ms ease-in-out;
+  -moz-transition: background 200ms ease-in-out;
+  -ms-transition: background 200ms ease-in-out;
+  -o-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
 }
 }
 
 #steam:hover {
-  background:#20b597;
+  background:#39d1b4;
 }
 
 @media (min-width: 768px) {
@@ -99,12 +106,33 @@ canvas {
 
 @media (min-width: 768px) {
   .navbar-right>li>a>p {
-    color:#ffffff;
+    color:#39d1b4;
     font-weight:700;
     position:relative;
-    bottom:3px;
+    bottom:5px;
+    right:2px;
+    -webkit-transition: color 200ms ease-in-out;
+    -moz-transition: color 200ms ease-in-out;
+    -ms-transition: color 200ms ease-in-out;
+    -o-transition: color 200ms ease-in-out;
+    transition: color 200ms ease-in-out;
+}
+}
+
+@media (min-width: 768px) {
+  .navbar-right>li>a>p:hover {
+    color:#ffffff;
+  }
 }
 
 i {
   margin-right:5px;
+}
+
+canvas {
+  border-radius:120px;
+}
+
+#pbar-container {
+  width:98%;
 }

@@ -60,3 +60,51 @@ canvas {
 .navbar-default .navbar-nav>li>a:hover {
   color:#39d1b4;
 }
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.logo {
+  height:40px;
+  margin-top:-9px;
+}
+
+@media (min-width: 768px) {
+#steam {
+  background:#39d1b4;
+}
+}
+
+#steam:hover {
+  background:#20b597;
+}
+
+@media (min-width: 768px) {
+  .navbar-right {
+  margin-top:4px;
+}
+}
+
+@media (min-width: 768px) {
+  .navbar-right>li>a {
+  height:35px;
+}
+}
+
+@media (min-width: 768px) {
+  .navbar-right>li>a>p {
+    color:#ffffff;
+    font-weight:700;
+    position:relative;
+    bottom:3px;
+}
+
+i {
+  margin-right:5px;
+}

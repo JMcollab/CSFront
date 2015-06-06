@@ -72,10 +72,25 @@ canvas {
   border-radius:120px;
 }
 
-#pbar-container {
+#page-container {
   width:98%;
 }
 
 #center-nav {
   font-size:16px;
+}
+
+.skin {
+  float:left;
+}
+
+.skin-image {
+  width:180px;
+  height:180px;
+  margin:-20px 30px 0 30px;
+}
+
+.skin-name {
+  text-align: center;
+  margin-top:0;
 }

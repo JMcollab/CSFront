@@ -48,21 +48,23 @@
     border:2px solid #009688;
     border-radius:5px;
     font-size:16px;
+    /*
     -webkit-transition:200ms ease-in-out;
     -moz-transition:200ms ease-in-out;
     -ms-transition:200ms ease-in-out;
     -o-transition:200ms ease-in-out;
-    transition:200ms ease-in-out;
+    transition:200ms ease-in-out; */
 }
 }
 
-
+/*
 @media (min-width: 768px) {
     #steam:hover {
     color:#009688;
     background:#EEEEEE;
   }
 }
+*/
 
 i {
   margin-right:5px;
@@ -70,6 +72,8 @@ i {
 
 canvas {
   border-radius:120px;
+  margin-bottom:25px;
+  margin-top:5px;
 }
 
 #page-container {
@@ -78,10 +82,6 @@ canvas {
 
 #center-nav {
   font-size:16px;
-}
-
-.skin {
-  float:left;
 }
 
 .skin-image {
@@ -93,4 +93,60 @@ canvas {
 .skin-name {
   text-align: center;
   margin-top:0;
+}
+
+.deposited-picture {
+  float:left;
+}
+
+.row-picture, .row-picture>.circle {
+  width:45px!important;
+  height:45px!important;
+}
+
+.row-picture {
+  padding-right:0px!important;
+  margin-right:16px;
+}
+
+.row-content {
+  min-height:45px!important;
+}
+
+.list-group-item-heading {
+  vertical-align:middle;
+  line-height:25px!important;
+  margin-top:10px;
+}
+
+#game-panel {
+  max-height:740px;
+}
+
+#pbar-info {
+  color:#14A1FF;
+  text-align:center;
+}
+#num-skins {
+  font-size:100px;
+}
+
+#skins-word {
+  font-size:50px;
+}
+
+@media (min-width: 768px) {
+#skin-panel {
+  width:310px;
+}
+}
+
+@media (max-width: 767px) {
+  #skin-panel {
+    width:100%;
+  }
+}
+
+#username-bold {
+  font-weight:bold;
 }

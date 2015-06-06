@@ -14,8 +14,6 @@ var skinstext = document.getElementById("numSkins");
 function fillBar() {
     ctx.fillStyle="#14a1ff";
     ctx.fillRect(0, 0, value * 10, 200); //Up to 10 skins
-    if(i % 30 == 0)
-        skinstext.innerHTML = (i/30).toString() + " skins deposited";
     if(i <= skins*30) {
         i++;
         value ++;

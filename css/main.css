@@ -147,6 +147,14 @@ canvas {
   }
 }
 
-#username-bold {
+.username-bold {
   font-weight:bold;
+}
+
+button {
+  color:black;
+}
+
+#skin-panel-body {
+  padding:0 15px;
 }

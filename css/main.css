@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
   .nav-link, .nav-link>a {
-  height:55px!important;
+  height:100%!important;
 }
 }
 
@@ -8,8 +8,14 @@ nav {
   box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-  color:#39d1b4;
+.nav-link>a {
+    font-size:17px;
+    webkit-transition:.25s ease-in-out;
+    transition:.25s ease-in-out;
+  }
+
+.nav-link:hover {
+  color:#ffffff;
 }
 
 .navbar .navbar-nav {
@@ -39,38 +45,6 @@ nav {
   height:45px;
 }
 }
-
-@media (min-width: 768px) {
-  #steam {
-    color:#ffffff;
-    font-weight:700;
-    position:relative;
-    bottom:5px;
-    right:2px;
-    margin-top:10px;
-    padding-bottom:0px;
-    padding-top:11px;
-    background:#009688;
-    border:2px solid #009688;
-    border-radius:5px;
-    font-size:16px;
-    /*
-    -webkit-transition:200ms ease-in-out;
-    -moz-transition:200ms ease-in-out;
-    -ms-transition:200ms ease-in-out;
-    -o-transition:200ms ease-in-out;
-    transition:200ms ease-in-out; */
-}
-}
-
-/*
-@media (min-width: 768px) {
-    #steam:hover {
-    color:#009688;
-    background:#EEEEEE;
-  }
-}
-*/
 
 i {
   margin-right:5px;

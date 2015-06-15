@@ -5,22 +5,18 @@
 }
 
 nav {
-  box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+  background:#ffffff!important;
 }
 
 .nav-link>a {
     font-size:17px;
-    webkit-transition:.25s ease-in-out;
-    transition:.25s ease-in-out;
+    color:#34495e!important;
+    webkit-transition:.30s ease-in-out;
+    transition:.30s ease-in-out;
   }
 
-.nav-link:hover {
-  color:#ffffff;
-}
-
-.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
+.nav-link>a:hover {
+  color:#39D1B4!important;
 }
 
 .navbar .navbar-collapse {
@@ -36,7 +32,6 @@ nav {
 
 @media (min-width: 768px) {
   .navbar-right {
-  margin-top:4px;
 }
 }
 

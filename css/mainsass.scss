@@ -99,6 +99,10 @@ canvas {
   overflow:auto
 }
 
+#game-panel>.panel-heading {
+  background:$dark-green;
+}
+
 #pbar-info {
   color:#14A1FF;
   text-align:center;
@@ -128,24 +132,20 @@ canvas {
 }
 
 button {
-  color:black;
+  color:#000;
 }
 
 #skin-panel-body {
   padding:0 15px;
 }
 
-#game-panel>.panel-heading {
-  background:$dark-green;
-}
-
 .col-md-4, .col-md-6, .col-md-2 {
-  animation:pagesnap .4s ease-out 1;
+  animation:pagesnap 1.5s 1;
 }
 
 @keyframes pagesnap {
   0% {
-    transform:translateY(1000px);
+    transform:translateY(1080px);
   }
   100% {
     transform:translateY(0px);

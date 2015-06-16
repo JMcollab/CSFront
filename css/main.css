@@ -31,11 +31,6 @@ nav {
 
 
 @media (min-width: 768px) {
-  .navbar-right {
-}
-}
-
-@media (min-width: 768px) {
   .navbar-right>li>a {
   height:45px;
 }
@@ -52,7 +47,7 @@ canvas {
 }
 
 #page-container {
-  width:98%;
+  width:100%;
 }
 
 #center-nav {
@@ -132,4 +127,8 @@ button {
 
 #skin-panel-body {
   padding:0 15px;
+}
+
+#game-panel>.panel-heading {
+  background:#2dbfa2;
 }

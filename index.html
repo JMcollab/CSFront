@@ -12,8 +12,8 @@
     <link href="dist/css/roboto.min.css" rel="stylesheet">
     <link href="dist/css/material-fullpalette.min.css" rel="stylesheet">
     <link href="dist/css/ripples.min.css" rel="stylesheet">
-     <!-- Fort Awesome CDN (Steam Icon) -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Fort Awesome CDN (Steam Icon) -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Page Style -->
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -29,18 +29,17 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/">
-                    <img src="/img/logo.png" class="logo">
+                    <img src="img/logo.png" class="logo">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-link"><a href="#">Link</a></li>
-                    <li class="nav-link"><a href="#">Another Link</a></li>
-                    <li class="nav-link"><a href="#">And Another</a></li>
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link"><a href="#">About</a></li>
+                    <li class="nav-link"><a href="#">FAQ</a></li>
                     <li class="nav-link">
                         <a href="#" id="steam">
-                              <i class="fa fa-steam"></i>
-                              Sign in through Steam
+                            <i class="fa fa-steam"></i> Sign in through Steam
                         </a>
                     </li>
             </div>
@@ -48,34 +47,36 @@
     </nav>
     <div class="container" id="page-container">
         <div class="row">
-            <div class="col-md-12">
+            <!-- <div class="col-md-12">
                 <canvas id="canvas" width="1820" height="100">
-                </canvas>
-            </div>
+                </canvas> -->
             <div class="col-md-2" id="skin-panel">
                 <div class="panel panel-default">
-                                <div class="panel-body" id="skin-panel-body">
-                                    <div class="skin">
-                                        <img src="http://steamcommunity-a.akamaihd.net/economy/image/fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56P7fiDzRyTQXJVfdhX_o45gnTBCI24dJua9u35bwDZw2-tYrFNeMvMNhIG8OEXvKBYQGrvhg-g6AMe8eMpni93y7rbGZeCEH1ujVTFsKH5xI/360fx360f" class="skin-image">
-                                        <h5 class="skin-name">AK-47 Redline (Field-Tested)</h5>
-                                    </div>
-                                    <div class="skin">
-                                        <img src="http://steamcommunity-a.akamaihd.net/economy/image/fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56P7fiDzRyTQXJVfdhTuA49g3-Nio37M52Wei69qkBLBLqtoPOM7YlYdpLTJXZUqeDMwz97kM71qdYfZTaqCrujyW6bG4OXxbj5Ctaz2pFOJvI/360fx360f" class="skin-image">
-                                        <h5 class="skin-name">AK-47 | Vulcan (Field-Tested)</h5>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">Top 5 Skins</div>
-                            </div>
+                    <div class="panel-body" id="skin-panel-body">
+                        <div class="skin">
+                            <img src="http://steamcommunity-a.akamaihd.net/economy/image/fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56P7fiDzRyTQXJVfdhX_o45gnTBCI24dJua9u35bwDZw2-tYrFNeMvMNhIG8OEXvKBYQGrvhg-g6AMe8eMpni93y7rbGZeCEH1ujVTFsKH5xI/360fx360f" class="skin-image">
+                            <h5 class="skin-name">AK-47 Redline (Field-Tested)</h5>
+                        </div>
+                        <div class="skin">
+                            <img src="http://steamcommunity-a.akamaihd.net/economy/image/fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56P7fiDzRyTQXJVfdhTuA49g3-Nio37M52Wei69qkBLBLqtoPOM7YlYdpLTJXZUqeDMwz97kM71qdYfZTaqCrujyW6bG4OXxbj5Ctaz2pFOJvI/360fx360f" class="skin-image">
+                            <h5 class="skin-name">AK-47 | Vulcan (Field-Tested)</h5>
+                        </div>
+                    </div>
+                    <div class="panel-footer">Top 5 Skins</div>
+                </div>
             </div>
             <div class="col-md-4" id="pbar-info">
-                <h1 id="num-skins">7/25</h1>
-                <p id="skins-word">Skins</p>
-                <button type="button" id="add-skin">
-                    <-- Add a skin
-                </button>
-                <button type="button" id="add-deposit">
-                    Add a deposit -->
-                </button>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h1 id="num-skins">7/25</h1>
+                        <p id="skins-word">Skins</p>
+                        <button type="button" id="add-skin">
+                            <-- Add a skin </button>
+                                <button type="button" id="add-deposit">
+                                    Add a deposit -->
+                                </button>
+                    </div>
+                </div>
             </div>
             <div class="col-md-6">
                 <div class="panel panel-primary" id="game-panel">
@@ -128,6 +129,9 @@
     <!-- Canvas JS -->
     <script type="text/javascript" src="js/canvas.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script>$.material.init();</script>
+    <script>
+    $.material.init();
+    </script>
 </body>
+
 </html>

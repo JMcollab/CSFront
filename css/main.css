@@ -67,7 +67,8 @@ canvas {
   margin-top: 10px; }
 
 #game-panel {
-  max-height: 740px; }
+  max-height: 740px;
+  overflow: auto; }
 
 #pbar-info {
   color: #14A1FF;
@@ -96,5 +97,14 @@ button {
 
 #game-panel > .panel-heading {
   background: #2dbfa2; }
+
+.col-md-4, .col-md-6, .col-md-2 {
+  animation: pagesnap .4s ease-out 1; }
+
+@keyframes pagesnap {
+  0% {
+    transform: translateY(1000px); }
+  100% {
+    transform: translateY(0px); } }
 
 /*# sourceMappingURL=main.css.map */

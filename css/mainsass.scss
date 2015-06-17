@@ -60,8 +60,8 @@ canvas {
 }
 
 .skin-image {
-  width:180px;
-  height:180px;
+  width:150px;
+  height:150px;
   margin:-20px 30px 0 30px;
 }
 
@@ -115,12 +115,6 @@ canvas {
   font-size:50px;
 }
 
-@media (min-width: 768px) {
-#skin-panel {
-  width:310px;
-}
-}
-
 @media (max-width: 767px) {
   #skin-panel {
     width:100%;
@@ -137,9 +131,11 @@ button {
 
 #skin-panel-body {
   padding:0 15px;
+  display:flex;
+  overflow:auto;
 }
 
-.col-md-4, .col-md-6, .col-md-2 {
+.transform-col {
   animation:pagesnap 1.5s 1;
 }
 

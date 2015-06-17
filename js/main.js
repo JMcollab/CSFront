@@ -58,3 +58,15 @@ function incrementDeposit() {
   var panelBody = document.getElementById("game-panel-body");
   panelBody.appendChild(listGroup);
 }
+
+
+
+
+
+var screenHeight = screen.height;
+console.log(screenHeight);
+if (screenHeight == 1080)
+{
+  var maxHeight = document.getElementById("game-panel");
+  maxHeight.style.height = "650px";
+}

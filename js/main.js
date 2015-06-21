@@ -5,8 +5,11 @@ addSkin.addEventListener("click", incrementSkin);
 addDeposit.addEventListener("click", incrementDeposit);
 
 function incrementSkin() {
-  var createDiv = document.createElement("div");
-  createDiv.setAttribute("class", "skin");
+  /* jQuery
+  $("div.skin:last").after('<div class="skin"><img class="skin-image" src="http://steamcommunity-a.akamaihd.net/economy/image/fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56I_OKMyJYcxPSPqFNVfg14jfkDCYk8fhvVcWx8vVSeQ7rvNeVO7B-MNwYG8mGC_WHYVr_70pq0fULe8aLpXvm3C3gP20PRVO1rSj5oTL5/360fx360f"><h5 class="skin-name">AWP | Asiimov (Battle-Scarred)</h5></div>');
+  */
+
+  var createDiv = document.createElement("div").setAttribute("class", "skin");
 
   var skinImage = document.createElement("img");
   skinImage.setAttribute("class", "skin-image");
@@ -20,7 +23,7 @@ function incrementSkin() {
   createDiv.appendChild(skinImage);
   createDiv.appendChild(skinName);;
 
-  skinPanel.appendChild(createDiv);
+  skinPanel.appendChild(createDiv); 
 }
 
 function incrementDeposit() {
@@ -57,16 +60,4 @@ function incrementDeposit() {
 
   var panelBody = document.getElementById("game-panel-body");
   panelBody.appendChild(listGroup);
-}
-
-
-
-
-
-var screenHeight = screen.height;
-console.log(screenHeight);
-if (screenHeight == 1080)
-{
-  var maxHeight = document.getElementById("game-panel");
-  maxHeight.style.height = "650px";
 }

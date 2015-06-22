@@ -65,5 +65,5 @@ function incrementDeposit() {
   listGroup.appendChild(listGroupItem);
 
   var panelBody = document.getElementById("game-panel-body");
-  panelBody.appendChild(listGroup);
+  panelBody.insertBefore(listGroup, panelBody.childNodes[0]);
 }

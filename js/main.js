@@ -6,7 +6,7 @@ addDeposit.addEventListener("click", incrementDeposit);
 
 function incrementSkin() {
   /* jQuery
-  $("div.skin:last").after('<div class="skin"><img class="skin-image" src="http://steamcommunity-a.akamaihd.net/economy/image/fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56I_OKMyJYcxPSPqFNVfg14jfkDCYk8fhvVcWx8vVSeQ7rvNeVO7B-MNwYG8mGC_WHYVr_70pq0fULe8aLpXvm3C3gP20PRVO1rSj5oTL5/360fx360f"><h5 class="skin-name">AWP | Asiimov (Battle-Scarred)</h5></div>');
+  $("div.skin:last").after('<div class="skin"><img class="skin-image" src="http://steamcommunity-a.akamaihd.net/economy/image/fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56I_OKMyJYcxPSPqFNVfg14jfkDCYk8fhvVcWx8vVSeQ7rvNeVO7B-MNwYG8mGC_WHYVr_70pq0fULe8aLpXvm3C3gP20PRVO1rSj5oTL5/360fx360f"><h3 class="skin-price">$147.32</h3><h5 class="skin-name">AWP | Asiimov (Battle-Scarred)</h5></div>');
   */
 
   var createDiv = document.createElement("div");
@@ -20,9 +20,14 @@ function incrementSkin() {
   skinName.setAttribute("class", "skin-name");
   skinName.innerHTML = "AWP | Asiimov (Battle-Scarred)";
 
+  var skinPrice = document.createElement("h3");
+  skinPrice.setAttribute("class", "skin-price");
+  skinPrice.innerHTML = "$87.24";
+
   var skinPanel = document.getElementById("skin-panel-body");
   createDiv.appendChild(skinImage);
-  createDiv.appendChild(skinName);;
+  createDiv.appendChild(skinPrice);
+  createDiv.appendChild(skinName);
 
   skinPanel.appendChild(createDiv); 
 }

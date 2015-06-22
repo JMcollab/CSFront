@@ -102,6 +102,7 @@ canvas {
 #game-panel {
     max-height: 605px;
     overflow: auto;
+    overflow-X:hidden;
 }
 
 #game-panel>.panel-heading {
@@ -147,9 +148,54 @@ button {
 
 @keyframes appear {
     0% {
-        transition: translateY(1080px);
+        opacity: 0;
     }
     100% {
-        transform: translateY(0px);
+        opacity: 1;
     }
+}
+
+.list-group-item {
+	animation:popIn 1.2s 1;
+}
+
+@keyframes popIn {
+	0%, 100% {
+		animation-timing-function: cubic-bezier(0,1,.74,.99);
+	}
+
+	0% {
+		transform:translateX(100%);
+	}
+	100% {
+		transform:translateX(0%);
+	}
+}
+
+@keyframes bounceInLeft {
+  0%, 60%, 75%, 90%, 100% {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  100% {
+    transform: none;
+  }
 }

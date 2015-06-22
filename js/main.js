@@ -20,9 +20,9 @@ function incrementSkin() {
   skinName.setAttribute("class", "skin-name");
   skinName.innerHTML = "AWP | Asiimov (Battle-Scarred)";
 
-  var skinPrice = document.createElement("h3");
-  skinPrice.setAttribute("class", "skin-price");
-  skinPrice.innerHTML = "$87.24";
+  var skinPanel = document.createElement("h3");
+  skinPanel.setAttribute("class", "skin-price");
+  skinPanel.innerHTML = "$87.24";
 
   var skinPanel = document.getElementById("skin-panel-body");
   createDiv.appendChild(skinImage);

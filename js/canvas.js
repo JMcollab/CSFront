@@ -1,26 +1,14 @@
 var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
+if (canvas.getContext) {
+	var ctx = canvas.getContext("2d");
 
-var value = 0; //Enter the amount of skins
+	var width = 891.500, height= 891.500, divWidth = width/6, divHeight = height/6;
+	ctx.fillStyle = "#3e75ad";
+	ctx.fillRect(0,0, width, height);
+	ctx.clearRect(divWidth, divHeight, width - (2*divWidth), height - (2*divHeight));
+	console.log(height-divHeight);
+	console.log(width-divWidth);
+	ctx.font = "80px 'RobotoDraft'";
+	ctx.fillText("Hiya 7/25", 400, 500);
+}
 
-/*ctx.translate(0, 600); //Set origin to bottom right
-
-ctx.fillStyle="#E9EAED";
-ctx.fillRect(0,0, 200, -600);
-
-/*var interval = window.setInterval(fillBar, 1000); *///Fills bar by 1 per second...doesn't stop
-
-var skinstext = document.getElementById("numSkins");
-function fillBar() {
-    ctx.fillStyle="#14a1ff";
-    ctx.fillRect(0, 0, value * 10, 200); //Up to 10 skins
-    if(i <= skins*30) {
-        i++;
-        value ++;
-    }
-    else
-        clearInterval(interval);
-};
-var i = 0;
-var skins = 10;
-var interval = window.setInterval(fillBar, 20);

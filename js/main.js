@@ -70,3 +70,22 @@ function incrementDeposit() {
   var panelBody = document.getElementById("game-panel-body");
   panelBody.insertBefore(listGroup, panelBody.childNodes[0]); //Inserts before the first child node
 }
+
+//Horizontal mousewheel scroll
+(function() {
+    function scrollHorizontally(e) {
+        e = window.event || e;
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        document.getElementById('skin-panel-body').scrollLeft -= (delta*40); // Multiplied by 40
+        e.preventDefault();
+    }
+    if (document.getElementById('skin-panel-body').addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        document.getElementById('skin-panel-body').addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        document.getElementById('skin-panel-body').addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+        // IE 6/7/8
+        document.getElementById('skin-panel-body').attachEvent("onmousewheel", scrollHorizontally);
+    }
+})();

@@ -1,9 +1,11 @@
 var addSkin = document.getElementById("add-skin");
 var addDeposit = document.getElementById("add-deposit");
 
+//Event listeners for buttons
 addSkin.addEventListener("click", incrementSkin);
 addDeposit.addEventListener("click", incrementDeposit);
 
+//Adds a skin
 function incrementSkin() {
   /* jQuery
   $("div.skin:last").after('<div class="skin"><img class="skin-image" src="http://steamcommunity-a.akamaihd.net/economy/image/fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56I_OKMyJYcxPSPqFNVfg14jfkDCYk8fhvVcWx8vVSeQ7rvNeVO7B-MNwYG8mGC_WHYVr_70pq0fULe8aLpXvm3C3gP20PRVO1rSj5oTL5/360fx360f"><h3 class="skin-price">$147.32</h3><h5 class="skin-name">AWP | Asiimov (Battle-Scarred)</h5></div>');
@@ -29,9 +31,10 @@ function incrementSkin() {
   createDiv.appendChild(skinPrice);
   createDiv.appendChild(skinName);
 
-  skinPanel.appendChild(createDiv); 
+  skinPanel.appendChild(createDiv);
 }
 
+//Adds a Deposit Notificaiton
 function incrementDeposit() {
   var listGroup = document.createElement("div");
   listGroup.setAttribute("class", "list-group");
@@ -65,5 +68,5 @@ function incrementDeposit() {
   listGroup.appendChild(listGroupItem);
 
   var panelBody = document.getElementById("game-panel-body");
-  panelBody.insertBefore(listGroup, panelBody.childNodes[0]);
+  panelBody.insertBefore(listGroup, panelBody.childNodes[0]); //Inserts before the first child node
 }

@@ -1,3 +1,4 @@
+$(".poop").fitText();
 var addSkin = document.getElementById("add-skin");
 var addDeposit = document.getElementById("add-deposit");
 

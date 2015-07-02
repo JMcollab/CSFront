@@ -1,4 +1,5 @@
-$(".poop").fitText();
+$("#skins-word").fitText();
+$("#num-skins").fitText();
 var addSkin = document.getElementById("add-skin");
 var addDeposit = document.getElementById("add-deposit");
 

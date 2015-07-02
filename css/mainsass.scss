@@ -18,7 +18,7 @@ $gray:#EEEEEE;
 .nav-link>a {
     font-size: 17px;
     color: $blue-black!important;
-    webkit-transition: .30s ease-in-out;
+    -webkit-transition: .30s ease-in-out;
     transition: .30s ease-in-out;
 }
 
@@ -49,8 +49,16 @@ canvas {
     border-radius: 10%;
     margin-bottom: 25px;
     margin-top: 5px;
-    width:100%;
-    height:100%;
+    width:50%;
+    height:50%;
+}
+
+#canvas-text {
+  float:left;
+}
+
+#canvas-money {
+  float:right;
 }
 
 #page-container {
@@ -117,6 +125,13 @@ canvas {
     text-align: center;
 }
 
+#canvas-text {
+  width:100%;
+  position:absolute;
+  bottom:50%;
+  right:0;
+}
+
 @media (max-width: 767px) {
     #skin-panel {
         width: 100%;
@@ -137,11 +152,6 @@ button {
     overflow: auto;
 }
 
-#num-skins, #skins-word {
-	height:100%;
-	width:100%;
-	vertical-align:middle;
-}
 
 .transform-col {
     animation: appear 1.5s 1;
@@ -200,3 +210,5 @@ button {
     transform: none;
   }
 }
+
+#testdiv {width:100%;}

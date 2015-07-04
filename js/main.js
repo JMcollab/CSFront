@@ -1,5 +1,5 @@
-$("#skins-word").fitText();
-$("#num-skins").fitText();
+$("#num-skins").fitText(.75);
+$(".canvas-small-text").fitText(3);
 var addSkin = document.getElementById("add-skin");
 var addDeposit = document.getElementById("add-deposit");
 

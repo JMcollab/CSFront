@@ -21,14 +21,17 @@ if (canvas.getContext) {
 }
 
 var numTime = document.getElementById("num-time");
-var seconds = 30;
+var secondsGlobal = seconds = 20; //Set round time here
+var chunks = 2 / secondsGlobal;
+var endValue = 0;
 var timerInterval = setInterval(changeTime, 1000);
 function changeTime() {
   var stringSeconds = seconds.toString();
   numTime.textContent = stringSeconds;
+  endValue += chunks;
 
   ctx.beginPath();
-  ctx.arc(350, 350, 300, 1.50001 * Math.PI, 1.5*Math.PI);
+  ctx.arc(350, 350, 300, 1.5 * Math.PI, (endValue+1.5) * Math.PI);
   ctx.lineWidth = 25;
   ctx.strokeStyle = "#00b0ff";
   ctx.stroke();

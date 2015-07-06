@@ -1,5 +1,6 @@
 var canvas = document.getElementById("canvas-skins");
 var canvas2 = document.getElementById("canvas-money");
+var startTimer = document.getElementById("start-canvas-timer");
 if (canvas.getContext) {
     var ctx = canvas.getContext("2d");
 
@@ -21,22 +22,29 @@ if (canvas.getContext) {
 }
 
 var numTime = document.getElementById("num-time");
-var secondsGlobal = seconds = 20; //Set round time here
-var chunks = 2 / secondsGlobal;
-var endValue = 0;
-var timerInterval = setInterval(changeTime, 1000);
-function changeTime() {
+var secondsGlobal = seconds = 5; //Set round time here
+var frames = 60;
+var chunks = (2 / secondsGlobal)/frames; //Stroke space required for each second
+var endValue = 0; //What percent of the circle stroke is currently at
+
+startTimer.addEventListener("click", doTheTimerThing);
+
+function doTheTimerThing() {
+  var numInterval = setInterval(timeNumber, 1000);
+  var circleInterval = setInterval(timeCircle, (1000/frames));
+}
+
+function timeNumber() {
+  seconds--;
   var stringSeconds = seconds.toString();
   numTime.textContent = stringSeconds;
-  endValue += chunks;
+}
 
+function timeCircle() {
+  endValue += chunks;
   ctx.beginPath();
   ctx.arc(350, 350, 300, 1.5 * Math.PI, (endValue+1.5) * Math.PI);
   ctx.lineWidth = 25;
   ctx.strokeStyle = "#00b0ff";
   ctx.stroke();
-  if (seconds == 0) {
-    clearInterval(timerInterval);
-  }
-  seconds--;
 }

@@ -1,5 +1,5 @@
 $blue-black:#3e75ad;
-$dark-blue:#14A1FF;
+$light-blue:#14A1FF;
 $light-green:#39D1B4;
 $dark-green:#2dbfa2;
 $gray:#EEEEEE;
@@ -48,17 +48,41 @@ i {
 canvas {
     border-radius: 10%;
     margin-bottom: 25px;
-    margin-top: 5px;
-    width:50%;
-    height:50%;
+    margin:5px 0;
+    width:100%;
 }
 
 #canvas-text {
   float:left;
+  width:100%;
+  position:absolute;
+  top:20%;
+  right:23.5%;
+  color:$blue-black;
 }
 
 #canvas-money {
   float:right;
+}
+
+#canvas-div {
+  width:50%;
+  float:left;
+}
+
+.pot-div {
+  width:50%;
+  float:right;
+  text-align:right;
+}
+
+#pot-amount-small, #skins-amount-small {
+  margin:5px 0;
+  margin-bottom:50px;
+}
+
+#pot-amount, #skins-amount {
+  font-size:60px;
 }
 
 #page-container {
@@ -121,15 +145,7 @@ canvas {
 }
 
 #pbar-info {
-    color: $dark-blue;
     text-align: center;
-}
-
-#canvas-text {
-  width:100%;
-  position:absolute;
-  bottom:38.5%;
-  right:23.5%;
 }
 
 @media (max-width: 767px) {

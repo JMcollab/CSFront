@@ -71,19 +71,27 @@
             <div class="col-md-6 transform-col" id="pbar-info">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <canvas id="canvas-skins" width="700" height="700"></canvas>
-                        <canvas id="canvas-money" width="700" height="700"></canvas>
-                        <div id="canvas-text">
-                            <!-- FitText controls font-size -->
-                            <!-- Space before number keeps it centered -->
-                            <h1 id="num-time"></h1>
-                            <h3 class="canvas-small-text">secs remaining</h3>
+                        <div id="canvas-div">
+                            <canvas id="canvas-skins" width="700" height="700"></canvas>
+                            <div id="canvas-text">
+                                <!-- FitText controls font-size -->
+                                <!-- Space before number keeps it centered -->
+                                <h1 id="num-time"></h1>
+                                <h3 class="canvas-small-text">secs remaining</h3>
+                            </div>
                         </div>
-                        <button type="button" id="add-skin">
-                            <-- Add a skin </button>
-                                <button type="button" id="add-deposit">
-                                    Add a deposit -->
-                                </button>
+                        <div class="pot-div">
+                            <div id="pot-amount">$174.32
+                              <h3 id="pot-amount-small">Pot Value</h3>
+                            </div>
+                            <div id="skins-amount">25
+                              <h3 id="skins-amount-small">Skins Deposited</h3>
+                            </div>
+                            <div class="min-max">
+                              <h4>Minimum Deposit: $0.15</h4>
+                              <h4>Maximum Deposit: $5.00</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -383,6 +391,11 @@
             </div>
         </div>
     </div>
+    <button type="button" id="add-skin">
+        <-- Add a skin </button>
+            <button type="button" id="add-deposit">
+                Add a deposit -->
+            </button>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!-- Material Design JS -->

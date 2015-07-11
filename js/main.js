@@ -7,6 +7,7 @@ var addDeposit = document.getElementById("add-deposit");
 addSkin.addEventListener("click", incrementSkin);
 addDeposit.addEventListener("click", incrementDeposit);
 
+//Skin object
 function Skin(name, price, url) {
   this.name = name;
   this.price = price;
@@ -15,9 +16,12 @@ function Skin(name, price, url) {
 
 //Adds a skin
 function incrementSkin() {
+  //Declare new skin object
   var newSkin = new Skin("AWP | Asiimov (Battle-Scarred)", "$87.24", "http://steamcommunity-a.akamaihd.net/economy/image/fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZYMUrsm1j-9xgEObwgfEh_nvjlWhNzZCveCDfIBj98xqodQ2CZknz56I_OKMyJYcxPSPqFNVfg14jfkDCYk8fhvVcWx8vVSeQ7rvNeVO7B-MNwYG8mGC_WHYVr_70pq0fULe8aLpXvm3C3gP20PRVO1rSj5oTL5/360fx360f");
 
+  //Create new skin div in the DOM with all the the placeholders for images and such
   $("div.skin:last").after('<div class="skin"><img class="skin-image" src=""><h3 class="skin-price"></h3><h5 class="skin-name"></h5></div>');
+  //Fill in the placeholders with object info
   $("div.skin:last img.skin-image").attr("src", newSkin.url);
   $("div.skin:last h3.skin-price").text(newSkin.price);
   $("div.skin:last h5.skin-name").text(newSkin.name);
